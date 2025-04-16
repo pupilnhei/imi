@@ -1,453 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Wedding">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-    <title>Rahul & Sanma Wedding - April 29, 2025</title>
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/swiper.min.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
-    <link href="assets/sass/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <style>
-    /* Mobile responsiveness improvements */
-    @media (max-width: 767px) {
-        .wpo-section-title h2 {
-            font-size: 28px !important;
-            line-height: 1.3 !important;
-            margin-bottom: 15px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-section-title span {
-            font-size: 16px !important;
-            text-align: center !important;
-            display: block !important;
-        }
-        
-        .wpo-event-item {
-            margin-bottom: 30px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-event-text {
-            padding: 25px 15px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-event-text ul {
-            padding-left: 0 !important;
-            list-style: none !important;
-            text-align: center !important;
-        }
-        
-        .static-hero-s2 .slide-title h2 {
-            font-size: 32px !important;
-            margin-bottom: 15px !important;
-            text-align: center !important;
-        }
-        
-        .static-hero-s2 .slide-text p {
-            font-size: 18px !important;
-            text-align: center !important;
-        }
-        
-        .clock-grids {
-            display: flex !important;
-            justify-content: center !important;
-        }
-        
-        #clock2 {
-            display: flex !important;
-            justify-content: center !important;
-            flex-wrap: wrap !important;
-        }
-        
-        #clock2 > div {
-            margin: 5px !important;
-        }
-        
-        .text-grid {
-            text-align: center !important;
-            margin-bottom: 20px !important;
-        }
-        
-        .middle-couple-pic-wrap {
-            margin: 20px 0 !important;
-        }
-    }
-
-    /* Enhanced theme styles */
-    body {
-        background-color: #fff9f9 !important;
-        color: #333333 !important;
-    }
-
-    .page-wrapper {
-        background: linear-gradient(to bottom, #fff9f9, #ffeef8) !important;
-    }
-
-    .static-hero-s2 {
-        background: url('assets/images/slider/bg-enhanced.jpg') center center/cover no-repeat !important;
-        position: relative;
-        z-index: 1;
-    }
-
-    .static-hero-s2:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5);
-        z-index: -1;
-    }
-    
-    .wpo-wedding-date {
-        position: relative;
-        z-index: 10;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        margin-top: 30px;
-    }
-    
-    .clock-grids {
-        display: flex !important;
-        justify-content: center !important;
-        position: relative;
-        z-index: 20;
-    }
-    
-    #clock2 {
-        display: flex !important;
-        justify-content: center !important;
-        position: relative;
-        z-index: 30;
-        flex-wrap: wrap;
-    }
-    
-    #clock2 > div {
-        margin: 0 10px;
-        text-align: center;
-        min-width: 80px;
-        animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        50% {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(209, 138, 149, 0.3);
-        }
-        100% {
-            transform: scale(1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-    }
-    
-    #clock2 .time-entry {
-        color: #fff;
-    }
-    
-    #clock2 .time-entry span {
-        font-size: 32px;
-        font-weight: bold;
-        display: block;
-        line-height: 1;
-    }
-    
-    #clock2 .time-entry .txt {
-        font-size:     <style>
-    /* Mobile responsiveness improvements */
-    @media (max-width: 767px) {
-        .wpo-section-title h2 {
-            font-size: 28px !important;
-            line-height: 1.3 !important;
-            margin-bottom: 15px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-section-title span {
-            font-size: 16px !important;
-            text-align: center !important;
-            display: block !important;
-        }
-        
-        .wpo-event-item {
-            margin-bottom: 30px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-event-text {
-            padding: 25px 15px !important;
-            text-align: center !important;
-        }
-        
-        .wpo-event-text ul {
-            padding-left: 0 !important;
-            list-style: none !important;
-            text-align: center !important;
-        }
-        
-        .static-hero-s2 .slide-title h2 {
-            font-size: 32px !important;
-            margin-bottom: 15px !important;
-            text-align: center !important;
-        }
-        
-        .static-hero-s2 .slide-text p {
-            font-size: 18px !important;
-            text-align: center !important;
-        }
-        
-        .clock-grids {
-            display: flex !important;
-            justify-content: center !important;
-        }
-        
-        #clock2 {
-            display: flex !important;
-            justify-content: center !important;
-            flex-wrap: wrap !important;
-        }
-        
-        #clock2 > div {
-            margin: 5px !important;
-        }
-        
-        .text-grid {
-            text-align: center !important;
-            margin-bottom: 20px !important;
-        }
-        
-        .middle-couple-pic-wrap {
-            margin: 20px 0 !important;
-        }
-    }
-
-    /* Enhanced theme styles */
-    body {
-        background-color: #fff9f9 !important;
-        color: #333333 !important;
-    }
-
-    .page-wrapper {
-        background: linear-gradient(to bottom, #fff9f9, #ffeef8) !important;
-    }
-
-    .static-hero-s2 {
-        background: url('assets/images/slider/bg-enhanced.jpg') center center/cover no-repeat !important;
-        position: relative;
-        z-index: 1;
-    }
-
-    .static-hero-s2:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5);
-        z-index: -1;
-    }
-    
-    .wpo-wedding-date {
-        position: relative;
-        z-index: 10;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        margin-top: 30px;
-    }
-    
-    .clock-grids {
-        display: flex !important;
-        justify-content: center !important;
-        position: relative;
-        z-index: 20;
-    }
-    
-    #clock2 {
-        display: flex !important;
-        justify-content: center !important;
-        position: relative;
-        z-index: 30;
-        flex-wrap: wrap;
-    }
-    
-    #clock2 > div {
-        margin: 0 10px;
-        text-align: center;
-        min-width: 80px;
-        animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        50% {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(209, 138, 149, 0.3);
-        }
-        100% {
-            transform: scale(1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-    }
-    
-    #clock2 .time-entry {
-        color: #fff;
-    }
-    
-    #clock2 .time-entry span {
-        font-size: 32px;
-        font-weight: bold;
-        display: block;
-        line-height: 1;
-    }
-    
-    #clock2 .time-entry .txt {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-    
-    .wpo-event-section-s2 {
-        background: url('assets/images/event/event-bg.jpg') center center/cover no-repeat !important;
-        position: relative;
-    }
-
-    .wpo-event-section-s2:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.8);
-        z-index: 0;
-    }
-
-    .wpo-event-section-s2 .container {
-        position: relative;
-        z-index: 1;
-    }
-
+/* Mobile responsiveness improvements */
+@media (max-width: 767px) {
     .wpo-section-title h2 {
-        font-family: 'Great Vibes', cursive !important;
-        font-size: 48px !important;
-        color: #d18a95 !important;
-    }
-
-    .slide-title h2 {
-        font-family: 'Great Vibes', cursive !important;
-        font-size: 72px !important;
-        color: #d18a95 !important;
-        margin-bottom: 20px !important;
-    }
-
-    .wpo-event-item {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
-        transition: all 0.3s ease !important;
-        border-radius: 10px !important;
-        overflow: hidden !important;
-    }
-
-    .wpo-event-item:hover {
-        transform: translateY(-5px) !important;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
-    }
-
-    .wpo-event-text {
-        background: #fff !important;
-        padding: 30px 20px !important;
-    }
-
-    .wpo-event-text h2 {
-        color: #d18a95 !important;
+        font-size: 28px !important;
+        line-height: 1.3 !important;
         margin-bottom: 15px !important;
     }
     
-    .wpo-event-text ul {
-        list-style: none;
-        padding-left: 0;
+    .wpo-section-title span {
+        font-size: 16px !important;
     }
     
-    .wpo-event-text ul li {
-        margin-bottom: 8px;
-        text-align: center;
+    .wpo-event-item {
+        margin-bottom: 30px !important;
     }
+    
+    .wpo-event-text {
+        padding: 25px 15px !important;
+    }
+    
+    .static-hero-s2 .slide-title h2 {
+        font-size: 32px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .static-hero-s2 .slide-text p {
+        font-size: 18px !important;
+    }
+    
+    .clock-grids {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    #clock2 {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+    
+    #clock2 > div {
+        margin: 5px !important;
+    }
+}
 
-    .theme-btn {
-        background: #d18a95 !important;
-        color: #fff !important;
-        border: none !important;
-        padding: 12px 30px !important;
-        border-radius: 30px !important;
-        transition: all 0.3s ease !important;
-    }
+/* Enhanced theme styles */
+body {
+    background-color: #fff9f9 !important;
+    color: #333333 !important;
+}
 
-    .theme-btn:hover {
-        background: #b57980 !important;
-        transform: translateY(-3px) !important;
-        box-shadow: 0 5px 15px rgba(209, 138, 149, 0.3) !important;
-    }
+.page-wrapper {
+    background: linear-gradient(to bottom, #fff9f9, #ffeef8) !important;
+}
 
-    .wpo-cta-section-s2 {
-        background: url('assets/images/cta-bg.jpg') center center/cover !important;
-        position: relative;
-    }
+.static-hero-s2 {
+    background: url('assets/images/slider/bg-enhanced.jpg') center center/cover no-repeat !important;
+    position: relative;
+}
 
-    .wpo-cta-section-s2:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(209, 138, 149, 0.8) !important;
-    }
+.static-hero-s2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
 
-    .wpo-cta-item {
-        padding: 60px 0 !important;
-        position: relative;
-        z-index: 1;
-    }
+.wpo-event-section-s2 {
+    background: url('assets/images/event/event-bg.jpg') center center/cover no-repeat !important;
+    position: relative;
+}
 
-    .wpo-cta-item h2, .wpo-cta-item p {
-        color: #fff !important;
-    }
+.wpo-event-section-s2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+}
 
-    .wpo-site-footer-s2 {
-        background: url('./assets/images/footer-bg-enhanced.jpg') no-repeat center center !important;
-        background-size: cover !important;
-    }
-    </style><!DOCTYPE html>
+.wpo-event-section-s2 .container {
+    position: relative;
+    z-index: 1;
+}
+
+.wpo-section-title h2 {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 48px !important;
+    color: #d18a95 !important;
+}
+
+.slide-title h2 {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 72px !important;
+    color: #d18a95 !important;
+    margin-bottom: 20px !important;
+}
+
+.wpo-event-item {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.wpo-event-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.wpo-event-text {
+    background: #fff !important;
+    padding: 30px 20px !important;
+}
+
+.wpo-event-text h2 {
+    color: #d18a95 !important;
+    margin-bottom: 15px !important;
+}
+
+.theme-btn {
+    background: #d18a95 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 12px 30px !important;
+    border-radius: 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+.theme-btn:hover {
+    background: #b57980 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(209, 138, 149, 0.3) !important;
+}
+
+.wpo-cta-section-s2 {
+    background: url('assets/images/cta-bg.jpg') center center/cover !important;
+    position: relative;
+}
+
+.wpo-cta-section-s2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 138, 149, 0.8) !important;
+}
+
+.wpo-cta-item {
+    padding: 60px 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.wpo-cta-item h2, .wpo-cta-item p {
+    color: #fff !important;
+}
+
+.wpo-site-footer-s2 {
+    background: url('./assets/images/footer-bg-enhanced.jpg') no-repeat center center !important;
+    background-size: cover !important;
+}<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1002,42 +722,30 @@
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-          // Set the countdown values in the HTML with colorful animated styling
+          // Set the countdown values in the HTML with better styling
           if (document.getElementById("clock2")) {
             document.getElementById("clock2").innerHTML = 
-              "<div style='background: linear-gradient(45deg, #d18a95, #e9a8b1); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px; animation: pulse 2s infinite;'><div class='time-entry days'><span>" + days + "</span> <div class='txt'>Days</div></div></div>" +
-              "<div style='background: linear-gradient(45deg, #d18a95, #e9a8b1); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px; animation: pulse 2s infinite; animation-delay: 0.3s;'><div class='time-entry hours'><span>" + hours + "</span> <div class='txt'>Hours</div></div></div>" +
-              "<div style='background: linear-gradient(45deg, #d18a95, #e9a8b1); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px; animation: pulse 2s infinite; animation-delay: 0.6s;'><div class='time-entry minutes'><span>" + minutes + "</span> <div class='txt'>Mins</div></div></div>" +
-              "<div style='background: linear-gradient(45deg, #d18a95, #e9a8b1); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 5px; animation: pulse 2s infinite; animation-delay: 0.9s;'><div class='time-entry seconds'><span>" + seconds + "</span> <div class='txt'>Secs</div></div></div>";
+              "<div style='background-color: rgba(209, 138, 149, 0.9); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);'><div class='time-entry days'><span>" + days + "</span> <div class='txt'>Days</div></div></div>" +
+              "<div style='background-color: rgba(209, 138, 149, 0.9); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);'><div class='time-entry hours'><span>" + hours + "</span> <div class='txt'>Hours</div></div></div>" +
+              "<div style='background-color: rgba(209, 138, 149, 0.9); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);'><div class='time-entry minutes'><span>" + minutes + "</span> <div class='txt'>Mins</div></div></div>" +
+              "<div style='background-color: rgba(209, 138, 149, 0.9); padding: 15px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);'><div class='time-entry seconds'><span>" + seconds + "</span> <div class='txt'>Secs</div></div></div>";
           }
             
           // If the count down is over, write some text 
           if (distance < 0) {
             clearInterval(x);
             if (document.getElementById("clock2")) {
-              document.getElementById("clock2").innerHTML = "<div style='background: linear-gradient(45deg, #d18a95, #e9a8b1); padding: 15px; border-radius: 8px;'><div class='time-entry'><span>Wedding Day has arrived!</span></div></div>";
+              document.getElementById("clock2").innerHTML = "<div style='background-color: rgba(209, 138, 149, 0.9); padding: 15px; border-radius: 8px;'><div class='time-entry'><span>Wedding Day has arrived!</span></div></div>";
             }
           }
         }, 1000);
         
-        // Make sure clock is visible immediately and add animation styles
+        // Make sure clock is visible immediately
         document.addEventListener("DOMContentLoaded", function() {
-            // Add the animation keyframes to the document
-            var style = document.createElement('style');
-            style.innerHTML = `
-                @keyframes pulse {
-                    0% { transform: scale(1); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
-                    50% { transform: scale(1.05); box-shadow: 0 5px 20px rgba(209, 138, 149, 0.3); }
-                    100% { transform: scale(1); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
-                }
-            `;
-            document.head.appendChild(style);
-            
             const clockElement = document.getElementById("clock2");
             if (clockElement) {
                 clockElement.style.display = "flex";
                 clockElement.style.justifyContent = "center";
-                clockElement.style.flexWrap = "wrap";
                 clockElement.style.zIndex = "100";
                 
                 // Add a container around the clock for better visibility
